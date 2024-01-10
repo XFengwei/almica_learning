@@ -117,7 +117,7 @@ linerestfreq='230.5380' # in GHz unit
 # it is recommended that you only image 1 or 2 channels around your spectral peak
 # and adjust the relative weighting based on this initial trial.
 ch_start="1"
-numch="30"
+numch="30" # number of channels to image
 
 # set the cellsize and dimension for the ACA images
 aca_cell=0.8
@@ -161,7 +161,7 @@ pbfwhm_tp='27.32'
 crval3_tp=188.3402      # reset velocity header (important if this is not ALMATP)
 cdelt3_tp=-0.07937064   # reset velocity header (important if this is not ALMATP)
 crpix3_tp=1             # reset velocity header (important if this is not ALMATP)
-tsys_tp=6500.0          # an artificial tsys for relative weighting
+tsys_tp=6500.0          # an artificial tsys for relative weighting, larger will lead to lower weighting
 tp_unit_convert="yes"
 tp_brightness_unit="Jy/beam"
 tp_conv_f=1.0  # a constant to multiple to all pixels of your TP image.
